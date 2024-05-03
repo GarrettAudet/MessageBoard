@@ -6,11 +6,11 @@ html
     link(rel='stylesheet', href='/stylesheets/style.css')
     body
         h1= "Add a movie!"
-        form(action='/add_book', method='POST')
+        form(action='/new', method='POST')
             label(for='author') Author's Name:
             input(type='text', id='author', name='author', value='')
             br
-            label(for='message') Message Text:
+            label(for='messageTest') Message Text:
             input(type='text', id='message', name='message', value='')
             br
             input(type='submit', value='Submit')
