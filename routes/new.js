@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-const { messages } = require('./index.js');
+const { messages } = require(./index.js)
   
 /* GET home page. */
 router.get('/new', function(req, res, next) {
