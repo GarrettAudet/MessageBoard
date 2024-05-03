@@ -1,0 +1,16 @@
+doctype html
+
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+      h1= "Add a movie!"
+      form(action='/new', method='POST')
+          label(for='messageUser') Author's Name:
+          input(type='text', id='author', name='messageUser', value='')
+          br
+          label(for='messageTest') Message Text:
+          input(type='text', id='message', name='messageText', value='')
+          br
+          input(type='submit', value='Submit')
